@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		FB609A992C7E0FCA008554A3 /* PaymentsAppUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB609A982C7E0FCA008554A3 /* PaymentsAppUIApp.swift */; };
-		FB609A9B2C7E0FCA008554A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB609A9A2C7E0FCA008554A3 /* ContentView.swift */; };
+		FB609A9B2C7E0FCA008554A3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB609A9A2C7E0FCA008554A3 /* HomeView.swift */; };
 		FB609A9D2C7E0FCC008554A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB609A9C2C7E0FCC008554A3 /* Assets.xcassets */; };
 		FB609AA02C7E0FCC008554A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB609A9F2C7E0FCC008554A3 /* Preview Assets.xcassets */; };
+		FBEC1BBE2C7E1DBA00691465 /* SuggestionTiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEC1BBD2C7E1DBA00691465 /* SuggestionTiles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB609A952C7E0FCA008554A3 /* PaymentsAppUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentsAppUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB609A982C7E0FCA008554A3 /* PaymentsAppUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsAppUIApp.swift; sourceTree = "<group>"; };
-		FB609A9A2C7E0FCA008554A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB609A9A2C7E0FCA008554A3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FB609A9C2C7E0FCC008554A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB609A9F2C7E0FCC008554A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBEC1BBD2C7E1DBA00691465 /* SuggestionTiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionTiles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		FB609A972C7E0FCA008554A3 /* PaymentsAppUI */ = {
 			isa = PBXGroup;
 			children = (
-				FB609A982C7E0FCA008554A3 /* PaymentsAppUIApp.swift */,
-				FB609A9A2C7E0FCA008554A3 /* ContentView.swift */,
+				FB609AA62C7E0FD4008554A3 /* App */,
+				FB609AA72C7E0FF6008554A3 /* Components */,
+				FB609AA82C7E1023008554A3 /* Core */,
 				FB609A9C2C7E0FCC008554A3 /* Assets.xcassets */,
 				FB609A9E2C7E0FCC008554A3 /* Preview Content */,
 			);
@@ -65,6 +68,46 @@
 				FB609A9F2C7E0FCC008554A3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB609AA62C7E0FD4008554A3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FB609A982C7E0FCA008554A3 /* PaymentsAppUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FB609AA72C7E0FF6008554A3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FBEC1BBD2C7E1DBA00691465 /* SuggestionTiles.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FB609AA82C7E1023008554A3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FB609AAA2C7E103F008554A3 /* View */,
+				FB609AA92C7E1035008554A3 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FB609AA92C7E1035008554A3 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				FB609A9A2C7E0FCA008554A3 /* HomeView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		FB609AAA2C7E103F008554A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB609A9B2C7E0FCA008554A3 /* ContentView.swift in Sources */,
+				FB609A9B2C7E0FCA008554A3 /* HomeView.swift in Sources */,
 				FB609A992C7E0FCA008554A3 /* PaymentsAppUIApp.swift in Sources */,
+				FBEC1BBE2C7E1DBA00691465 /* SuggestionTiles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
