@@ -24,10 +24,8 @@ struct HomeView: View {
                 Suggestions()
             }
             .ignoresSafeArea()
-            
-            Spacer()
         }
-        .padding()
+        .padding(.horizontal)
     }
 }
 
@@ -42,6 +40,7 @@ struct TopBar: View {
             Image(systemName: "bell.fill")
         }
         .padding(.horizontal, 24)
+        .padding(.top, 12)
         .font(.system(size: 24))
     }
 }
@@ -135,7 +134,7 @@ struct PaymentMethods: View {
                     }
                     .padding(24)
                     Spacer()
-                    HStack (spacing: 24){
+                    HStack (spacing: 20){
                         Button{} label :{
                             Text("+")
                                 .font(.headline)
